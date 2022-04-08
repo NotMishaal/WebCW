@@ -236,7 +236,7 @@ nav li,nav a {
     padding: 10px;
     margin-top: 10px;
     width: 50%;
-    color: #fff;
+    color: #000;
     background: #ff6359;
     border: 0;
     border-radius: 10px;
@@ -247,7 +247,6 @@ nav li,nav a {
 
 #userForm button:hover {
     background: #faeeee;
-    color: #000;
 }
 
 .inputControl {
@@ -398,7 +397,7 @@ footer h3 {
 
 .dropbtn {
     background-color: #ff6359;
-    color: #fff;
+    color: #000;
     padding: 16px;
     font-size: 16px;
     border: 0;
@@ -579,6 +578,7 @@ footer h3 {
 }
 
 .product-price {
+
     padding-top: .6rem;
     padding-right: .6rem;
     display: inline-block;
@@ -612,7 +612,7 @@ footer h3 {
 
 .off-info .category-title {
     background: var(--carribean-green);
-    color: #fff;
+    color: #000;
     display: inline-block;
     padding: .5rem;
     position: absolute;

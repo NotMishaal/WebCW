@@ -12,7 +12,7 @@
     <body id="resetFont">
     <header>
         <div class="navbar">
-            <a href="main.html"><img class="logo" src="assets/logoBlack.svg" alt="logo"></a>
+            <a href="main.html"><img class="logo" src="assets/logoBlack.svg" alt="website logo"></a>
             <nav>
                 <ul class="links" id="menuItems">
                     <li><a href="productPage.html">Shop</a></li>
@@ -40,7 +40,7 @@
                 <!--Cart-->
                 <div class="sidePanel ">
                     <button class="side-panel-openClose-button" type="button">
-                        <i class="fa-solid fa-cart-shopping fa-xl" id="cart-display-qnt"></i>
+                        <i class="fa-solid fa-cart-shopping fa-xl" id="cart-display-qnt"></i>⠀
                     </button>
                     <div class="cart" id="cart">  <!--This is the side panel content -->
                         <div class="cart-head">
@@ -54,16 +54,16 @@
                                 <div class="close-btn" onclick="togglePopup()">X</div>
                                 <h1>BILLING ADDRESS</h1>
                                 <form class="customer-detail-form">
-                                    <label for="">First Name</label><br>
-                                    <input type="text" name="firstName"/> <br><br>
-                                    <label for="">Last Name</label><br>
-                                    <input type="text" name="lastName"/> <br><br>
-                                    <label for="">Email</label><br>
-                                    <input type="text" name="email"/> <br><br>
-                                    <label for="">Phone number</label><br>
-                                    <input type="text" name="phoneNumber"/> <br><br>
-                                    <label for="">Address</label><br>
-                                    <input type="text" name="address"/> <br><br>
+                                    <label for="prodFirstname">First Name</label><br>
+                                    <input type="text" name="firstName" id="prodFirstname"/> <br><br>
+                                    <label for="prodLastname">Last Name</label><br>
+                                    <input type="text" name="lastName" id="prodLastname"/> <br><br>
+                                    <label for="prodEmail">Email</label><br>
+                                    <input type="text" name="email" id="prodEmail"/> <br><br>
+                                    <label for="prodPhoneNumber">Phone number</label><br>
+                                    <input type="text" name="phoneNumber" id="prodPhoneNumber"/> <br><br>
+                                    <label for="prodAddress">Address</label><br>
+                                    <input type="text" name="address" id="prodAddress"/> <br><br>
                                     <input type="button" value="Claim points"  id="claimPointsButton" onclick="deductPointsFromTotalPrice(this.userBadge);">
                                     <input type="button" value="Place order" id="placeOrderButton" onclick="showAndClearField(this.form);">
                                 </form>
@@ -87,9 +87,9 @@
                 <!--Product 1-->
                 <div class="product-box">
                     <a href="products/productItem1.html" target="blank">
-                        <img src="assets/bottle1.jpeg" class="productImg">
+                        <img src="assets/bottle1.jpeg" class="productImg" alt="image of bottle">
                     </a>
-                    <button id="addP1ToCart" onclick="addToCartSection('bottle1.jpeg', bottle.name, bottle.price, bottle.stock)" class="add-cart-button"><i class="fa-solid fa-cart-plus"></i></button>
+                    <button id="addP1ToCart" onclick="addToCartSection('bottle1.jpeg', bottle.name, bottle.price, bottle.stock)" class="add-cart-button"><i class="fa-solid fa-cart-plus"></i>⠀</button>
                     <h2 class="product-title" id="bottleName">
                         <script>document.getElementById("bottleName").innerHTML = bottle.name;</script>
                     </h2>
@@ -104,9 +104,9 @@
                 <!--Product 2-->
                 <div class="product-box">
                     <a href="products/productItem2.html" target="blank">
-                        <img src="assets/cap1.jpeg" class="productImg">
+                        <img src="assets/cap1.jpeg" class="productImg" alt="image of cap">
                     </a>
-                    <button id="addP2ToCart" onclick="addToCartSection('cap1.jpeg', cap.name, cap.price, cap.stock)" class="add-cart-button"><i class="fa-solid fa-cart-plus"></i></button>
+                    <button id="addP2ToCart" onclick="addToCartSection('cap1.jpeg', cap.name, cap.price, cap.stock)" class="add-cart-button"><i class="fa-solid fa-cart-plus"></i>⠀</button>
                     <h2 class="product-title" id="capName">
                         <script>document.getElementById("capName").innerHTML = cap.name;</script>
                     </h2>
@@ -120,9 +120,9 @@
                 <!--Product 3-->
                 <div class="product-box">
                     <a href="products/productItem3.html" target="blank">
-                        <img src="assets/bag1.jpeg" class="productImg">
+                        <img src="assets/bag1.jpeg" class="productImg" alt="image of bag">
                     </a>
-                    <button id="addP3ToCart" onclick="addToCartSection('bag1.jpeg',bag.name, bag.price, bag.stock)" class="add-cart-button"><i class="fa-solid fa-cart-plus"></i></button>
+                    <button id="addP3ToCart" onclick="addToCartSection('bag1.jpeg',bag.name, bag.price, bag.stock)" class="add-cart-button"><i class="fa-solid fa-cart-plus"></i>⠀</button>
                     <h2 class="product-title" id="bagName">
                         <script>document.getElementById("bagName").innerHTML = bag.name;</script>
                     </h2>
@@ -139,7 +139,7 @@
             <div class="footerContainer">
                 <div class="row">
                     <div class="footer1">
-                        <img src="assets/logoWhite.svg" alt="logo">
+                        <img src="assets/logoWhite.svg" alt="website logo">
 
                     </div>
                     <div class="footer2">
