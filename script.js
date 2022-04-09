@@ -288,7 +288,7 @@ function addToCartBox(imageName, name, price, qnt){
     /*Adds the item, item image, price and quantity into the sidepanel cart */
     document.getElementById("cart-display-qnt").innerHTML = " "+getNumberOfTotalItemsInCart();
     document.getElementById("content").innerHTML += 
-        "<img id='cartImage' src='../assets/"+imageName+"' class='product-img'></img>\
+        "<img id='cartImage' src='assets/"+imageName+"' class='productImg'></img>\
 <div class='cart-content'></br> \
 "+name+"</br>Price: "+(price*qnt)+"</br>\
 Quantity:"+qnt+"</div>";

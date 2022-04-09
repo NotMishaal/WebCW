@@ -10,86 +10,84 @@
         <script src="https://kit.fontawesome.com/0374eeb209.js" crossorigin="anonymous"></script>
     </head>
     <body id="resetFont">
-    <header>
-        <div class="navbar">
-            <a href="main.html"><img class="logo" src="assets/logoBlack.svg" alt="website logo"></a>
-            <nav>
-                <ul class="links" id="menuItems">
-                    <li><a href="productPage.html">Shop</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="listings.html">Listings</a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
-                </ul>
-            </nav>
-            <img class="searchIcon" src="assets/search.svg" alt="search button">
-            <img class="menuIcon" src="assets/menu.svg" alt="menu button" onclick="menuToggle()">
-        </div>
-    </header>
+        <header>
+            <div class="navbar">
+                <a href="main.html"><img class="logo" src="assets/logoBlack.svg" alt="website logo"></a>
+                <nav>
+                    <ul class="links" id="menuItems">
+                        <li><a href="productPage.html">Shop</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="listings.html">Listings</a></li>
+                        <li><a href="aboutUs.html">About Us</a></li>
+                    </ul>
+                </nav>
+                <img class="searchIcon" src="assets/search.svg" alt="search button">
+                <img class="menuIcon" src="assets/menu.svg" alt="menu button" onclick="menuToggle()">
+            </div>
+        </header>
         <div class="change-font-container">
-            <button class="font-button" onclick="changeFontSize('increase')">A+</button>
-            <button class="font-button" onclick="changeFontSize('decrease')">A-</button>
-            <button class="font-button" onclick="changeFontSize('reset')">reset</button>
+            <button value="value" class="font-button" onclick="changeFontSize('increase')">A+</button>
+            <button value="value" class="font-button" onclick="changeFontSize('decrease')">A-</button>
+            <button value="value" class="font-button" onclick="changeFontSize('reset')">reset</button>
         </div>
 
-
-        <!--Shop-->
-
-
-        <div class="shop-content">
-            <div class="container cart-open">
-                <!--Cart-->
-                <div class="sidePanel ">
-                    <button class="side-panel-openClose-button" type="button">
-                        <i class="fa-solid fa-cart-shopping fa-xl" id="cart-display-qnt"></i>⠀
-                    </button>
-                    <div class="cart" id="cart">  <!--This is the side panel content -->
-                        <div class="cart-head">
-                            <button class="checkoutButton" onclick="togglePopup()">Check Out</button>
-                            <h1>Cart</h1> 
-                        </div>
-
-                        <div class="popup" id="popup-1"> <!--This is the form-->
-                            <div class="overlay"></div>
-                            <div class="content">
-                                <div class="close-btn" onclick="togglePopup()">X</div>
-                                <h1>BILLING ADDRESS</h1>
-                                <form class="customer-detail-form">
-                                    <label for="prodFirstname">First Name</label><br>
-                                    <input type="text" name="firstName" id="prodFirstname"/> <br><br>
-                                    <label for="prodLastname">Last Name</label><br>
-                                    <input type="text" name="lastName" id="prodLastname"/> <br><br>
-                                    <label for="prodEmail">Email</label><br>
-                                    <input type="text" name="email" id="prodEmail"/> <br><br>
-                                    <label for="prodPhoneNumber">Phone number</label><br>
-                                    <input type="text" name="phoneNumber" id="prodPhoneNumber"/> <br><br>
-                                    <label for="prodAddress">Address</label><br>
-                                    <input type="text" name="address" id="prodAddress"/> <br><br>
-                                    <input type="button" value="Claim points"  id="claimPointsButton" onclick="deductPointsFromTotalPrice(this.userBadge);">
-                                    <input type="button" value="Place order" id="placeOrderButton" onclick="showAndClearField(this.form);">
-                                </form>
-                            </div>
-                        </div>
-
-                        <button onclick="resetCart()" class="reset-cart-button" id="restCart">Reset</button>
-                        <div id="totalPrice">Total: LKR 0</div>
-                        <div id="content" class="content"></div>
+        <div class="prodContainer cart-open">
+            <!--Cart-->
+            <div class="sidePanel ">
+                <button value="value" class="side-panel-openClose-button" type="button">
+                    <i class="fa-solid fa-cart-shopping fa-xl" id="cart-display-qnt"> 0</i>
+                </button>
+                <div class="cart" id="cart"> <!-- This is the side panel content -->
+                    <div class="cart-head">
+                        <button value="value" class="checkoutButton" onclick="togglePopup()">Check Out</button>
+                        <h1>Cart</h1> 
                     </div>
-                    <script>
-                        document.querySelector(".side-panel-openClose-button").addEventListener("click", () => {
-                            document.querySelector(".container").classList.toggle("cart-open");
-                        });
-                    </script>
+
+                    <div class="popup" id="popup-1"> <!--This is the form-->
+                        <div class="overlay"></div>
+                        <div class="content">
+                            <div class="close-btn" onclick="togglePopup()">X</div>
+                            <h1>BILLING ADDRESS</h1>
+                            <form class="customer-detail-form">
+                                <label for="firstName">First Name</label><br>
+                                <input type="text" name="firstName" id="firstName"/> <br><br>
+                                <label for="lastName">Last Name</label><br>
+                                <input type="text" name="lastName" id="lastName"/> <br><br>
+                                <label for="email">Email</label><br>
+                                <input type="text" name="email" id="email"/> <br><br>
+                                <label for="phoneNumber">Phone number</label><br>
+                                <input type="text" name="phoneNumber" id="phoneNumber"/> <br><br>
+                                <label for="address">Address</label><br>
+                                <input type="text" name="address" id="address"/> <br><br>
+                                <input type="button" value="Claim points"  id="claimPointsButton" onclick="deductPointsFromTotalPrice(2);">
+                                <input type="button" value="Place order" id="placeOrderButton" onclick="showAndClearField(this.form);">
+                            </form>
+                        </div>
+                    </div>
+
+                    <button value="value" onclick="resetCart()" class="reset-cart-button" id="restCart">Reset</button>
+                    <div id="totalPrice">Total: LKR 0</div>
+                    <div id="content" class="content"></div>
                 </div>
+                <script>
+                    document.querySelector(".side-panel-openClose-button").addEventListener("click", () => {
+                        document.querySelector(".prodContainer").classList.toggle("cart-open");
+                    });
+                </script>
             </div>
 
-            <h2 id="header">Shop Products</h2>
-            <div class="row">
+            <!--Shop-->
+            <h2 class="section-title" id="header">Shop Products</h2>
+
+            <div class="shop-content">
                 <!--Product 1-->
                 <div class="product-box">
                     <a href="products/productItem1.html" target="blank">
-                        <img src="assets/bottle1.jpeg" class="productImg" alt="image of bottle">
+                        <img src="assets/bottle1.jpeg" class="productImg" alt="Bottle">
                     </a>
-                    <button id="addP1ToCart" onclick="addToCartSection('bottle1.jpeg', bottle.name, bottle.price, bottle.stock)" class="add-cart-button"><i class="fa-solid fa-cart-plus"></i>⠀</button>
+                    <button value="value" id="addP1ToCart" onclick="addToCartSection('bottle1.jpeg', bottle.name, bottle.price, bottle.stock)" class="add-cart-button">
+                        Buy <i class="fa-solid fa-cart-plus"></i>
+                    </button>
                     <h2 class="product-title" id="bottleName">
                         <script>document.getElementById("bottleName").innerHTML = bottle.name;</script>
                     </h2>
@@ -104,9 +102,11 @@
                 <!--Product 2-->
                 <div class="product-box">
                     <a href="products/productItem2.html" target="blank">
-                        <img src="assets/cap1.jpeg" class="productImg" alt="image of cap">
+                        <img src="assets/cap1.jpeg" class="productImg" alt="cap">
                     </a>
-                    <button id="addP2ToCart" onclick="addToCartSection('cap1.jpeg', cap.name, cap.price, cap.stock)" class="add-cart-button"><i class="fa-solid fa-cart-plus"></i>⠀</button>
+                    <button value="value" id="addP2ToCart" onclick="addToCartSection('cap1.jpeg', cap.name, cap.price, cap.stock)" class="add-cart-button">
+                        Buy <i class="fa-solid fa-cart-plus"></i>
+                    </button>
                     <h2 class="product-title" id="capName">
                         <script>document.getElementById("capName").innerHTML = cap.name;</script>
                     </h2>
@@ -120,9 +120,11 @@
                 <!--Product 3-->
                 <div class="product-box">
                     <a href="products/productItem3.html" target="blank">
-                        <img src="assets/bag1.jpeg" class="productImg" alt="image of bag">
+                        <img src="assets/bag1.jpeg" class="productImg" alt="bag">
                     </a>
-                    <button id="addP3ToCart" onclick="addToCartSection('bag1.jpeg',bag.name, bag.price, bag.stock)" class="add-cart-button"><i class="fa-solid fa-cart-plus"></i>⠀</button>
+                    <button value="value" id="addP3ToCart" onclick="addToCartSection('bag1.jpeg',bag.name, bag.price, bag.stock)" class="add-cart-button">  
+                        Buy <i class="fa-solid fa-cart-plus"></i>
+                    </button>
                     <h2 class="product-title" id="bagName">
                         <script>document.getElementById("bagName").innerHTML = bag.name;</script>
                     </h2>
