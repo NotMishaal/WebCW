@@ -631,14 +631,14 @@ footer h3 {
 }
 
 .form1 input {
-    
-	border: none;
-	border-radius: 3px;
-	display: block;
-	font-size: 12px;
-	padding: 7px 10px;
-	margin: 15px 0;
-	width: 100%;
+
+    border: none;
+    border-radius: 3px;
+    display: block;
+    font-size: 12px;
+    padding: 7px 10px;
+    margin: 15px 0;
+    width: 100%;
 }
 
 .activation-form {
@@ -652,8 +652,8 @@ footer h3 {
     padding: 2rem .5rem;
     box-shadow: 1px 1px 2rem rgba(0,0,0,.3);
     text-align: center;
-    
-  }
+
+}
 
 .form-button {
     padding: .8rem 2rem;
@@ -664,7 +664,7 @@ footer h3 {
     border: none;
     outline: none;
     cursor: pointer;
-  }
+}
 
 @media screen and (min-width:992px) {
     .product-items {
@@ -1004,5 +1004,77 @@ person-container a:hover, person-container a:visited, person-container a:link, p
     right: 15px;
     color: white;
     font-size: 35px;
+    cursor: pointer;
+}
+
+/* Editor's Page */
+
+.editor {
+    width: 100%;
+    padding: 78px 0;
+    background: #faeeee;
+
+}
+
+.editor img {
+    height: auto;
+    width: 420px;
+}
+
+.editorText {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.editorText h1 {
+    color: #000;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.editorText h5 {
+    color: #000;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.editorText span {
+    color: #ff6359;
+}
+
+.editorText p {
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+.editorText button {
+    background: #ff6359;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: 700;
+    padding: 13px 30px;
+    border-radius: 30px;
+
+    transition: all .3s ease 0s;
+}
+
+.editorText button:hover {
+    background: #fff;
+    color: #000;
+    border: 2px solid #ff6359;
     cursor: pointer;
 }
